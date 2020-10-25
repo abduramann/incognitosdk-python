@@ -3,6 +3,7 @@ import requests
 from websocket import create_connection
 from .Response import Response
 import threading
+import logging
 
 
 class Rpc:
@@ -45,6 +46,7 @@ class WebSocket:
 
         self._dictSubscription = {}
         self._threadSubscription = None
+        self._running = True
 
     def open(self):
         if self._ws_conn is None:
@@ -55,7 +57,9 @@ class WebSocket:
             self._ws_conn = create_connection(self._url, self._timeout)
 
     def close(self):
-        self._ws_conn.close()
+        self._running = False
+        if self.is_alive():
+            self._ws_conn.close()
 
     def is_alive(self):
         return self._ws_conn.connected
@@ -81,6 +85,12 @@ class WebSocket:
     def _watchSubcriptions(self):
         while True:
             response = Response(self._ws_conn.recv())
+
+            # prevent calling the handlers
+            if not self._running:
+                logging.debug("Exiting thread...")
+                break
+
             uniqueSubscriptionId = response.get_subscription_type()
             handlers = self._dictSubscription[uniqueSubscriptionId]
             for handler in handlers:

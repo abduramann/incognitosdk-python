@@ -11,8 +11,7 @@ class Incognito:
         self.Public = Incognito.Public(self)
 
     def destroy(self):
-        if self._websocket.is_alive():
-            self._websocket.close()
+        self._websocket.close()
 
     class Config:
         def __init__(self):
