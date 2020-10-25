@@ -6,3 +6,8 @@ To use this library in your applications, just run the command below in the root
 ```
 pip3 install .
 ```
+
+As of now, the library is incomplete. As time goes by, we'll try to evolve it. The current version supports:
+
+- Some subscription methods (requires a full node with websocket support)
+- Two main pDEX methods
