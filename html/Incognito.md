@@ -1,32 +1,28 @@
 # Table of Contents
 
-* [incognitosdk](#incognitosdk)
-* [incognitosdk.Response](#incognitosdk.Response)
-  * [Response](#incognitosdk.Response.Response)
-    * [is\_prv\_privacy](#incognitosdk.Response.Response.is_prv_privacy)
-* [incognitosdk.Connections](#incognitosdk.Connections)
-* [incognitosdk.Incognito](#incognitosdk.Incognito)
-  * [Incognito](#incognitosdk.Incognito.Incognito)
-    * [Public](#incognitosdk.Incognito.Incognito.Public)
-* [incognitosdk.Types](#incognitosdk.Types)
-* [incognitosdk.Utilities](#incognitosdk.Utilities)
-* [tester](#tester)
-* [tester.ApiTester](#tester.ApiTester)
+* [Response](#Response)
+  * [Response](#Response.Response)
+    * [is\_prv\_privacy](#Response.Response.is_prv_privacy)
+* [Connections](#Connections)
+* [\_\_init\_\_](#__init__)
+* [Incognito](#Incognito)
+  * [Incognito](#Incognito.Incognito)
+    * [Public](#Incognito.Incognito.Public)
+* [Types](#Types)
+  * [SubscriptionType](#Types.SubscriptionType)
+* [Utilities](#Utilities)
 
-<a name="incognitosdk"></a>
-# incognitosdk
+<a name="Response"></a>
+# Response
 
-<a name="incognitosdk.Response"></a>
-# incognitosdk.Response
-
-<a name="incognitosdk.Response.Response"></a>
+<a name="Response.Response"></a>
 ## Response Objects
 
 ```python
 class Response()
 ```
 
-<a name="incognitosdk.Response.Response.is_prv_privacy"></a>
+<a name="Response.Response.is_prv_privacy"></a>
 #### is\_prv\_privacy
 
 ```python
@@ -39,27 +35,30 @@ check if prv transaction is privacy or not
 
 True = privacy, False = no privacy
 
-<a name="incognitosdk.Connections"></a>
-# incognitosdk.Connections
+<a name="Connections"></a>
+# Connections
 
-<a name="incognitosdk.Incognito"></a>
-# incognitosdk.Incognito
+<a name="__init__"></a>
+# \_\_init\_\_
 
-<a name="incognitosdk.Incognito.Incognito"></a>
+<a name="Incognito"></a>
+# Incognito
+
+<a name="Incognito.Incognito"></a>
 ## Incognito Objects
 
 ```python
 class Incognito()
 ```
 
-<a name="incognitosdk.Incognito.Incognito.Public"></a>
+<a name="Incognito.Incognito.Public"></a>
 ## Public Objects
 
 ```python
 class Public()
 ```
 
-<a name="incognitosdk.Incognito.Incognito.Public.get_blockchain_info"></a>
+<a name="Incognito.Incognito.Public.get_blockchain_info"></a>
 #### get\_blockchain\_info
 
 ```python
@@ -68,14 +67,17 @@ class Public()
 
 Get the blockchain info
 
-<a name="incognitosdk.Types"></a>
-# incognitosdk.Types
+<a name="Types"></a>
+# Types
 
-<a name="incognitosdk.Utilities"></a>
-# incognitosdk.Utilities
+<a name="Types.SubscriptionType"></a>
+## SubscriptionType Objects
 
-<a name="tester"></a>
-# tester
+```python
+class SubscriptionType()
+```
 
-<a name="tester.ApiTester"></a>
-# tester.ApiTester
+Enumeration of Websocket subscriptions
+
+<a name="Utilities"></a>
+# Utilities
