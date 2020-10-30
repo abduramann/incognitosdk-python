@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Generate Python Docs
-      uses: jbheard/markdown-docs@v1
+      uses: abduramann/markdown-docs@v1
     - name: Open docs update PR
       uses: peter-evans/create-pull-request@v2
       with:
