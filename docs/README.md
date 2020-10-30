@@ -10,7 +10,7 @@
 
 **[TradeStatus](TradeStatus.md)**: 
 
-**[Rpc](Rpc.md)**: 
+**[Rpc](Rpc.md)**: Executes RPCs 
 
 **[WebSocket](WebSocket.md)**: 
 
