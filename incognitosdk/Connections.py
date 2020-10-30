@@ -7,6 +7,9 @@ import logging
 
 
 class Rpc:
+    """
+    Executes RPCs
+    """
     def __init__(self, url):
         self._headers = {'Content-Type': 'application/json'}
         self._id = 1
@@ -33,6 +36,12 @@ class Rpc:
         response = requests.post(self._base_url, data=json.dumps(data), headers=self._headers)
 
         return Response(response, f'From: {self._base_url}')
+
+    def _run(self, method, params):
+        return self. \
+            with_method(method). \
+            with_params(params). \
+            execute()
 
 
 class WebSocket:
