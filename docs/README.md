@@ -1,0 +1,94 @@
+# Python Documentation
+
+## Classes
+
+**[Incognito](Incognito.md)**: 
+
+**[SubscriptionType](SubscriptionType.md)**: 
+
+**[TransactionType](TransactionType.md)**: 
+
+**[TradeStatus](TradeStatus.md)**: 
+
+**[Rpc](Rpc.md)**: 
+
+**[WebSocket](WebSocket.md)**: 
+
+**[Response](Response.md)**: 
+
+**[StackTrace](StackTrace.md)**: 
+
+**[Params](Params.md)**: 
+
+
+## Functions
+
+### coin
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+amount |  | 
+decimals |  | 
+nano |  | True
+
+
+
+
+
+### calculateBuyAmount
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+sellAmount |  | 
+sellPoolAmount |  | 
+buyPoolAmount |  | 
+
+
+
+
+
+### fp
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+value |  | 
+precision |  | 
+
+
+
+
+
+### c
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+value |  | 
+
+
+
+
+
+### p
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+value |  | 
+
+
+
+
