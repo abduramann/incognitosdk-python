@@ -1,4 +1,4 @@
-# WebSocket
+# testShell
 
 
 
@@ -6,7 +6,7 @@
 ## Methods
 
 
-### __init__
+### do_run
 
 
 
@@ -15,28 +15,13 @@
 name | description | default
 --- | --- | ---
 self |  | 
-url |  | 
-timeout |  | 180
+arg |  | 
 
 
 
 
 
-### open
-
-
-
-
-#### Parameters
-name | description | default
---- | --- | ---
-self |  | 
-
-
-
-
-
-### close
+### do_blockchain
 
 
 
@@ -45,26 +30,13 @@ self |  |
 name | description | default
 --- | --- | ---
 self |  | 
+arg |  | 
 
 
 
 
 
-### is_alive
-
-
-
-
-#### Parameters
-name | description | default
---- | --- | ---
-self |  | 
-
-
-
-
-
-### subscribe
+### do_trade
 
 
 
@@ -73,15 +45,73 @@ self |  |
 name | description | default
 --- | --- | ---
 self |  | 
-subscriptionType |  | 
-params |  | 
-handler |  | 
+arg |  | 
 
 
 
 
 
-### _watchSubcriptions
+### do_wasm
+
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+self |  | 
+arg |  | 
+
+
+
+
+
+### do_sendprv
+
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+self |  | 
+arg |  | 
+
+
+
+
+
+### do_sendtoken
+
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+self |  | 
+arg |  | 
+
+
+
+
+
+### do_exit
+
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+self |  | 
+arg |  | 
+
+
+
+
+
+### emptyline
 
 
 

@@ -4,6 +4,12 @@
 
 **[Incognito](Incognito.md)**: 
 
+**[SubscriptionType](SubscriptionType.md)**: Enumeration of Websocket subscriptions 
+
+**[TransactionType](TransactionType.md)**: 
+
+**[TradeStatus](TradeStatus.md)**: 
+
 **[Rpc](Rpc.md)**: Executes RPCs 
 
 **[WebSocket](WebSocket.md)**: 
@@ -14,11 +20,7 @@
 
 **[Params](Params.md)**: 
 
-**[SubscriptionType](SubscriptionType.md)**: Enumeration of Websocket subscriptions 
-
-**[TransactionType](TransactionType.md)**: 
-
-**[TradeStatus](TradeStatus.md)**: 
+**[testShell](testShell.md)**: 
 
 
 ## Functions

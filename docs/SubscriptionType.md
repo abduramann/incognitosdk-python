@@ -5,7 +5,3 @@ Enumeration of Websocket subscriptions
 
 ## Methods
 
-
-
-
-
