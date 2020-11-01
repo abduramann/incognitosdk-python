@@ -1,10 +1,10 @@
 from setuptools import setup
 
 setup(name='incognitosdk',
-      version='0.1.0',
+      version='0.0.1',
       description='Python SDK for Incognito Chain',
       url='http://github.com/abduramann/incognitosdk-python',
-      author='Flying Circus',
+      author='Abduraman Blackram',
       author_email='',
       license='MIT',
       packages=['incognitosdk'],

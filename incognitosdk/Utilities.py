@@ -5,7 +5,7 @@ BURNING_ADDRESS = "12RxahVABnAVCGP3LGwCn8jkQxgw7z1x14wztHzn455TTVpi1wBq9YGwkRMQg
 
 def coin(amount, decimals, nano=True):
     if nano:
-        return amount * (10 ** decimals)
+        return int(amount * (10 ** decimals))
     else:
         return amount / (10 ** decimals)
 

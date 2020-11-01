@@ -1,4 +1,7 @@
 class SubscriptionType:
+    """
+    Enumeration of Websocket subscriptions
+    """
     NewShardBlock = "subcribenewshardblock"
     PendingTransaction = "subcribependingtransaction"
     NewBeaconBlock = "subcribenewbeaconblock"

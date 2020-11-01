@@ -1,7 +1,7 @@
 # Rpc
 
 
-
+Executes RPCs 
 
 ## Methods
 
@@ -60,6 +60,26 @@ method |  |
 name | description | default
 --- | --- | ---
 self |  | 
+
+
+
+
+
+### _run
+
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+self |  | 
+method |  | 
+params |  | 
+
+
+
+
 
 
 
