@@ -23,7 +23,7 @@ class Incognito:
 
     class Config:
         def __init__(self):
-            self.RpcUrl = "https://mainnet.incognito.org/fullnode"
+            self.RpcUrl = "https://community-fullnode.incognito.org/"
             self.WsUrl = "ws://fullnode.incognito.best:19334"
             self.TokenListUrl = "https://api.incognito.org/ptoken/list"
 
