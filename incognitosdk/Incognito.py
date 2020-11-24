@@ -1,5 +1,6 @@
 from .Connections import *
 from .Utilities import *
+import copy
 
 
 class Incognito:
@@ -20,6 +21,11 @@ class Incognito:
     def destroy(self):
         if self._websocket is not None:
             self._websocket.close()
+
+    # Do not use to modify configuration; it won't have any effect on configuration
+    # To change configuration, you should recreate an Incognito object
+    def get_config(self):
+        return copy.deepcopy(self._config)
 
     class Config:
         def __init__(self):
@@ -72,6 +78,17 @@ class Incognito:
                 with_method("getpdestate"). \
                 with_params([{"BeaconHeight": beacon_height}]). \
                 execute()
+
+        def get_privacy_custom_token(self, token_id):
+            return self._rpc. \
+                with_method("getprivacycustomtoken"). \
+                with_params([token_id]). \
+                execute()
+
+        def get_total_staker(self):
+            return self._rpc. \
+                with_method('gettotalstaker'). \
+                with_params([]).execute().data()['Result']['TotalStaker']
 
         def get_trade_response(self, tx_id):
             return self._rpc. \

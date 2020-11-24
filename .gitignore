@@ -1,2 +1,4 @@
 incognitosdk.iml
 ignored/*
+tester/private/*
+tester/result.json

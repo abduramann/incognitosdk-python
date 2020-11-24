@@ -150,7 +150,13 @@ class Response:
 
     def get_proof_detail_input_coin_value_prv(self):
         try:
-            return self.get_result()['ProofDetail']['InputCoins'][0]['CoinDetails']['Value']
+            return self.get_result('ProofDetail')['InputCoins'][0]['CoinDetails']['Value']
+        except TypeError:
+            return None
+
+    def get_proof_detail_output_coin_value_prv(self):
+        try:
+            return self.get_result('ProofDetail')['OutputCoins'][0]['CoinDetails']['Value']
         except TypeError:
             return None
 
