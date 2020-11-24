@@ -34,3 +34,17 @@ self |  |
 
 
 
+
+### get_config
+
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+self |  | 
+
+
+
+

@@ -21,6 +21,66 @@ arg |  |
 
 
 
+### do_retb
+
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+self |  | 
+arg |  | 
+
+
+
+
+
+### do_retbbh
+
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+self |  | 
+arg |  | 
+
+
+
+
+
+### do_bretb
+
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+self |  | 
+arg |  | 
+
+
+
+
+
+### do_bretbbh
+
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+self |  | 
+arg |  | 
+
+
+
+
+
 ### do_blockchain
 
 
@@ -37,21 +97,6 @@ arg |  |
 
 
 ### do_trade
-
-
-
-
-#### Parameters
-name | description | default
---- | --- | ---
-self |  | 
-arg |  | 
-
-
-
-
-
-### do_wasm
 
 
 

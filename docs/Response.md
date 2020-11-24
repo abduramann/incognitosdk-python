@@ -528,6 +528,20 @@ self |  |
 
 
 
+### get_proof_detail_output_coin_value_prv
+
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+self |  | 
+
+
+
+
+
 ### is_prv_privacy
 
 
