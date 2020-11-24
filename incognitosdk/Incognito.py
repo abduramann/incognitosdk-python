@@ -79,6 +79,12 @@ class Incognito:
                 with_params([{"BeaconHeight": beacon_height}]). \
                 execute()
 
+        def list_privacy_custom_token(self):
+            return self._rpc. \
+                with_method("listprivacycustomtoken"). \
+                with_params([]). \
+                execute()
+
         def get_privacy_custom_token(self, token_id):
             return self._rpc. \
                 with_method("getprivacycustomtoken"). \
