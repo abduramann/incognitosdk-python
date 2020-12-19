@@ -53,6 +53,11 @@ class testShell(Cmd):
         print(incognitoApi.Private.send_token(params[0], params[1], params[2], float(params[3]),
                                               float(params[4]) if len(params) > 4 else 0))
 
+    def do_stake(self, arg):
+        """Start staking: stake private_key address validator_key reward_receiver_address"""
+        params = str(arg).split()
+        print(incognitoApi.Private.create_and_send_staking_transaction(params[0], params[1], params[2], params[3]))
+
     def do_exit(self, arg):
         sys.exit()
 

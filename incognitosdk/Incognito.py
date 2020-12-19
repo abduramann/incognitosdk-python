@@ -306,3 +306,20 @@ class Incognito:
                     "TraderAddressStr": payment_address
                 }, "", 0
             ]).execute()
+
+        def create_and_send_staking_transaction(self, candidate_private_key, candidate_payment_key,
+                                                candidate_validator_key,
+                                                reward_receiver_payment_key):
+            return self._rpc.with_method("createandsendstakingtransaction"). \
+                with_params([candidate_private_key,
+                             {
+                                 BURNING_ADDRESS: 1750000000000},
+                             2, 0,
+                             {
+                                 "StakingType": 63,
+                                 "CandidatePaymentAddress": candidate_payment_key,
+                                 "PrivateSeed": candidate_validator_key,
+                                 "RewardReceiverPaymentAddress": reward_receiver_payment_key,
+                                 "AutoReStaking": True
+                             }
+                             ]).execute()
