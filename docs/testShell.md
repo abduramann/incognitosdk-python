@@ -141,6 +141,21 @@ arg |  |
 
 
 
+### do_stake
+
+
+Start staking: stake private_key address validator_key reward_receiver_address 
+
+#### Parameters
+name | description | default
+--- | --- | ---
+self |  | 
+arg |  | 
+
+
+
+
+
 ### do_exit
 
 

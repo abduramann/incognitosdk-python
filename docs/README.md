@@ -2,13 +2,11 @@
 
 ## Classes
 
-**[testShell](testShell.md)**: 
+**[SubscriptionType](SubscriptionType.md)**: Enumeration of Websocket subscriptions 
 
-**[Rpc](Rpc.md)**: Executes RPCs 
+**[TransactionType](TransactionType.md)**: 
 
-**[WebSocket](WebSocket.md)**: 
-
-**[Incognito](Incognito.md)**: 
+**[TradeStatus](TradeStatus.md)**: 
 
 **[Response](Response.md)**: 
 
@@ -16,11 +14,13 @@
 
 **[Params](Params.md)**: 
 
-**[SubscriptionType](SubscriptionType.md)**: Enumeration of Websocket subscriptions 
+**[Incognito](Incognito.md)**: 
 
-**[TransactionType](TransactionType.md)**: 
+**[Rpc](Rpc.md)**: Executes RPCs 
 
-**[TradeStatus](TradeStatus.md)**: 
+**[WebSocket](WebSocket.md)**: 
+
+**[testShell](testShell.md)**: 
 
 
 ## Functions
